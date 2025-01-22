@@ -25,7 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-TTT4L755" />
+      <GoogleTagManager
+        gtmId="GTM-TTT4L755"
+        dataLayer={{
+          user_id: "123",
+          user_email: "test@test.com",
+        }}
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
